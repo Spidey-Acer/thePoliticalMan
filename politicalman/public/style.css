@@ -1,0 +1,16 @@
+*
+{
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    word-wrap: break-word;
+    font-family: "Nunito", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(assets/bg-pattern.png);
+    background-size: auto;
+    background-repeat: repeat;
+}
