@@ -10,7 +10,7 @@
 }
 
 body{
-    background-image: url(assets/bg-pattern.png);
-    background-size: auto;
-    background-repeat: repeat;
+    background: linear-gradient(to right, #FFFFFF, #F0F0F0);
+    height: 100%;
+    width: 100%;
 }

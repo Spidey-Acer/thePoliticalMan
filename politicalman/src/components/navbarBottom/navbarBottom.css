@@ -1,0 +1,44 @@
+.navbarBottom {
+  background: linear-gradient(to bottom, #5E0404, #7D0404, crimson, #800000);
+  height: 0;
+  display: none;
+  position: fixed;
+}
+.navbarBottom .navbarBottomWrapper {
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+  color: white;
+  justify-content: space-between;
+}
+.navbarBottom .navbarBottomWrapper .item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.navbarBottom .navbarBottomWrapper .item .span {
+  font-size: 16px;
+}
+.navbarBottom .navbarBottomWrapper .dropDownMenu1 {
+  position: absolute;
+  top: 40px;
+  width: 200px;
+  padding: 15px;
+  color: #ffa9a9;
+  display: flex;
+  flex-direction: column;
+  background-color: crimson;
+  box-shadow: 0 20px 20px rgba(220, 20, 60, 0.5);
+  border-radius: 0px 0px 10px 10px;
+  z-index: 1;
+}
+.navbarBottom .navbarBottomWrapper .dropDownMenu1 span a {
+  display: flex;
+  align-items: center;
+  padding-bottom: 18px;
+  font-size: 16px;
+}
+.navbarBottom .navbarBottomWrapper .dropDownMenu1 a:hover {
+  color: white;
+}/*# sourceMappingURL=navbarBottom.css.map */

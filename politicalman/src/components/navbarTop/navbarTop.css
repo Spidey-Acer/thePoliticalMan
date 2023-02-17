@@ -1,0 +1,104 @@
+.navbarTop {
+  background: crimson;
+  height: 90px;
+  width: 100%;
+  position: fixed;
+}
+.navbarTop .navbarContainer {
+  padding: 12.5px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbarTop .navbarContainer .center-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 60%;
+  background: crimson;
+  margin: 0 20px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 500px;
+  max-height: 65px;
+}
+.navbarTop .navbarContainer .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+.navbarTop .navbarContainer .left .item {
+  display: flex;
+  align-items: center;
+  color: #ffa9a9;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.navbarTop .navbarContainer .left .item:hover {
+  color: white;
+}
+.navbarTop .navbarContainer .left .item:hover span {
+  font-size: 14px;
+  font-weight: 500;
+}
+.navbarTop .navbarContainer .right {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  justify-content: center;
+}
+.navbarTop .navbarContainer .item, .navbarTop .navbarContainer .menubar {
+  display: flex;
+  align-items: center;
+  color: #ffa9a9;
+  cursor: pointer;
+  transition: 0.5s;
+  visibility: visible;
+}
+.navbarTop .navbarContainer .item:hover, .navbarTop .navbarContainer .menubar:hover {
+  color: white;
+}
+.navbarTop .navbarContainer .item:hover span, .navbarTop .navbarContainer .menubar:hover span {
+  font-size: 14px;
+  font-weight: 500;
+}
+.navbarTop .navbarContainer .menubar svg {
+  font-size: 25px;
+}
+.navbarTop .navbarContainer .icons {
+  display: flex;
+  color: #ffa9a9;
+  gap: 15px;
+  cursor: pointer;
+}
+.navbarTop .navbarContainer .dropDownMenu {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: #ffa9a9;
+  color: white;
+  border-bottom: 2px solid #800000;
+  top: 37px;
+  border-radius: 10px;
+}
+.navbarTop .navbarContainer .dropDownMenu li {
+  padding: 5px 30px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.navbarTop .navbarContainer .dropDownMenu a {
+  font-weight: 500;
+}
+.navbarTop .navbarContainer .dropDownMenu:hover {
+  background: linear-gradient(to bottom, crimson, #800000);
+  color: white;
+}/*# sourceMappingURL=navbarTop.css.map */

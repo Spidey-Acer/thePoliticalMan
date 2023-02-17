@@ -1,0 +1,121 @@
+.navbarTop{
+    background: crimson;
+    height: 90px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+     .navbarContainer{
+        padding: 12.5px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .center-image{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 60%;
+            background: crimson;
+            margin: 0 20px;
+            border-radius: 10px;
+            object-fit: cover;
+            max-width: 500px;
+            max-height: 65px;
+            
+        }
+        .left{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+        
+            .item{
+                display: flex;
+                align-items: center;
+                color: #ffa9a9;
+                cursor: pointer;
+                transition: 0.5s;
+
+                &:hover{
+                    color: white;
+                    span{
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        .right{
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            justify-content: center;
+        }
+        
+
+                .item, .menubar {
+                    display: flex;
+                    align-items: center;
+                    color: #ffa9a9;
+                    cursor: pointer;
+                    transition: 0.5s;
+                    visibility: visible;
+        
+                    &:hover {
+                        color: white;
+        
+                        span {
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+                    }
+
+                }
+
+                .menubar svg{
+                    font-size: 25px;
+                }
+
+
+                .icons{
+                        display: flex;
+                        color: #ffa9a9;
+                        gap: 15px;
+                        cursor: pointer;
+                    }
+            
+                .menu {
+                    position: absolute;
+                    top: 0;
+                    left: -30%;
+                    width: 30%;
+                    height: 100vh;
+                    background: #fff;
+                    z-index: 10;
+                    transform: translateX(-100%);
+                    transition: transform 0.7s ease-in-out, left 0.7s ease-in-out;
+                }
+                
+                .show-menu {
+                    left: 0;
+                    transform: translateX(0%);
+                    transition: transform 0.7s ease-in-out, left 0.7s ease-in-out;
+                }
+
+                .close-button {
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    font-size: 1.5rem;
+                    color: #333;
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+                }
+
+     }
+} 

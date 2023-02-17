@@ -1,0 +1,92 @@
+.navbarBottom{
+    background: linear-gradient(to bottom, #5E0404, #7D0404, crimson, #800000);
+    height: 70px;
+    transition: transform 0.5s ease-in-out;
+    z-index: 1;
+    
+
+    .hide{
+        transform: translateY(-100%);
+    }
+
+    .show{
+        transform: translateY(0);
+    }
+
+    .navbarBottomWrapper{
+        display: flex;
+        align-items: center;
+        padding: 20px 30px;
+        color: white;
+        justify-content: space-between;
+
+        .item{
+            position: relative;
+            display: flex;
+            align-items: center; 
+            cursor : pointer;
+
+
+            .span{
+                font-size: 16px;
+            }
+
+
+        }
+
+        .dropDownMenu1{
+            position: absolute;
+            top: 50px;
+            width: 200px;
+            padding: 15px;
+            color: #ffa9a9;
+            display: flex;
+            flex-direction: column;
+            background-color: crimson;
+            box-shadow: 0 20px 20px rgba(220, 20, 60, 0.5);
+            border-radius: 0px 0px 10px 10px;
+            z-index: 1;
+
+            span a{
+                display: flex;
+                align-items: center;
+                padding-bottom: 18px;
+                font-size: 16px;
+            }
+
+            a:hover{
+                color: white;
+            }
+        }
+
+    }
+
+
+    .navbarBottomWrapper .left-item{
+        margin-right: auto;
+    }
+
+    .navbarBottomWrapper .right-item{
+        margin-left: auto;
+    }
+
+    .subscribe-button{
+        background-color: crimson;
+        color: white;
+        padding: 7px 20px;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 0.5s;
+        box-shadow: 0 0 10px 0px white;
+        
+
+        &:hover{
+            background: linear-gradient(to bottom, #5E0404, #7D0404, crimson, #800000);
+            box-shadow: 0 0 10px 0px white, 0 0 20px 0px crimson;
+        }
+    }
+    
+}
