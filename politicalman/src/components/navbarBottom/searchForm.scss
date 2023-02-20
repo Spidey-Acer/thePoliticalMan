@@ -1,0 +1,67 @@
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    input[type="text"] {
+        width: 60%;
+        height: 40px;
+        padding: 0.5rem;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 0px white;
+        outline: none;
+        transition: box-shadow 0.2s ease-in-out;
+
+        
+
+        &:valid {
+            background-color: crimson;
+            border: 2px solid white;
+            
+        }
+        &:focus {
+            box-shadow: 0 0 0 0.2rem rgba(220, 20, 60, 0.7);
+            background-color: white;
+            border: 2px solid crimson;
+            width: 350px;
+        }
+    }
+
+    input[type="text"]::placeholder {
+        color: white;
+    }
+
+    button[type="submit"] {
+        width: 100px;
+        height: 40px;
+        margin-left: 10px;
+        padding: 0px;
+        background-color: crimson;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 0px white;
+        outline: none;
+        transition: box-shadow 0.2s ease-in-out;
+
+        &:hover {
+            background: linear-gradient(to bottom, #5E0404, #7D0404, crimson, #800000);
+            box-shadow: 0 0 10px 0px white, 0 0 20px 0px crimson;
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 0.2rem rgba(220, 20, 60, 0.7);
+        }
+    }
+
+}
+.search-icon-size {
+    font-size: 24px;
+    /* change the size of the search icon */
+    display: flex;
+    /* display the icon in a row */
+    align-items: center;
+    /* vertically center the icon */
+}

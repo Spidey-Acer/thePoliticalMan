@@ -1,0 +1,33 @@
+.headingTitle{
+    border-top: 2px solid crimson;
+
+    .heading{
+        display: flex;
+        align-items: center;
+        padding: 15px 0px;
+        justify-content: space-between;
+
+        .title{
+            font-size: 18px;
+            font-weight: 700;
+            color: crimson;
+            text-transform: uppercase;
+        }
+
+        .icon{
+            display: flex;
+            align-items: center;
+            color: #777;
+            gap: 2px;
+            cursor: pointer;
+
+            .left:hover{
+                color: crimson;
+            }
+            .right:hover{
+                color: crimson;
+            }
+
+        }
+    }
+}

@@ -1,6 +1,6 @@
 .navbarBottom{
     background: linear-gradient(to bottom, #5E0404, #7D0404, crimson, #800000);
-    height: 70px;
+    height: 75px;
     transition: transform 0.5s ease-in-out;
     z-index: 1;
     
@@ -34,28 +34,132 @@
 
         }
 
-        .dropDownMenu1{
-            position: absolute;
-            top: 50px;
-            width: 200px;
-            padding: 15px;
-            color: #ffa9a9;
+        .menubar {
             display: flex;
-            flex-direction: column;
-            background-color: crimson;
-            box-shadow: 0 20px 20px rgba(220, 20, 60, 0.5);
-            border-radius: 0px 0px 10px 10px;
-            z-index: 1;
-
-            span a{
-                display: flex;
-                align-items: center;
-                padding-bottom: 18px;
-                font-size: 16px;
+            align-items: center;
+            color: #ffa9a9;
+            cursor: pointer;
+            transition: 0.5s;
+            visibility: visible;
+        
+            &:hover {
+                color: white;
+        
+                span {
+                    font-size: 14px;
+                    font-weight: 500;
+                }
             }
 
-            a:hover{
-                color: white;
+        }
+        .menubar svg{
+            font-size: 30px;
+        }
+
+        .menu {
+            position: absolute;
+            top: 190px;
+            left: -30%;
+            width: 25%;
+            height: 100vh;
+            background: #fff;
+            z-index: 10;
+            transform: translateX(-100%);
+            transition: transform 0.7s  ease-in-out, left 0.7s ease-in-out;
+            filter: blur(0);
+            overflow-y: scroll;
+            box-sizing: border-box;
+            backdrop-filter: blur(10px); ;
+
+            &::-webkit-scrollbar {
+                width: 6px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: crimson;
+                border-radius: 10px;
+            }
+        }
+                
+        .show-menu {
+            left: 0;
+            transform: translateX(0%);
+            transition: transform 0.7s ease-in-out, left 0.7s ease-in-out;
+            pointer-events: auto;
+        }
+
+        .close-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 1.5rem;
+            color: #333;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            background-color: crimson;
+            border-radius: 10px;
+        }
+
+        .logo img{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 40px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 20px;
+
+            li{
+                padding: 1rem;
+                cursor: pointer;
+                width: 100%;
+                left: 10px;
+                font-size: 23px;
+                border-radius: 10px;
+                transition: 0.5s;
+                color: crimson;
+                
+                &:hover{
+                    background-color: crimson;
+                    color: white;
+                    border-radius: 10px;
+                }
+            }
+            
+        }
+
+        .menu-icons{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            color: crimson;
+
+            & svg{
+                font-size: 30px;
+
+                &:hover{
+                    color: rgb(107, 0, 0);
+                    cursor: pointer;
+                }
             }
         }
 

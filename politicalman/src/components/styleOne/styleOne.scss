@@ -1,0 +1,159 @@
+.styleOne{
+    .top{
+        position: relative;
+        margin-bottom: 20px;
+        width: auto;
+        height: auto;
+        overflow: hidden;
+
+        img{
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .cat{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 600;
+            color: #fff;
+            text-transform: uppercase;
+            background-color: crimson;
+            padding: 5px 10px;
+            border-radius: 10px;
+            transition: 0.5s;
+
+            &:hover{
+                background: linear-gradient(to bottom, #5E0404, #7D0404, crimson, #800000);
+                cursor: pointer;
+            }
+        }
+
+        .icon{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 20px;
+            right: 20px;
+            background-color: crimson;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 10px;
+            transition: 0.5s;
+            cursor: pointer;
+
+            &:hover{
+                background: linear-gradient(to bottom, #5E0404, #7D0404, crimson, #800000);
+                cursor: pointer;
+            }
+        }
+
+        .postInfo{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            
+            ul{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .nav{
+                color: white;
+                font-size: 14px;
+                margin-left: 25px;
+                transition: 0.7s;
+                font-weight: 700;
+
+                &:hover{
+                    color: crimson;
+                    cursor: pointer;
+                }  
+            }
+
+            .nal li{
+                font-weight: 700;
+            }
+
+            h3{
+                padding: 0px 20px 20px 20px;
+                font-size: 16px;
+                color: white;
+                font-weight: 900;
+                width: 350px;
+                transition: 0.7s;
+                cursor: pointer;
+
+                &:hover{
+                    color: crimson;
+                }
+            }
+        }
+    }
+
+    .bottom{
+        .item{
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            gap: 15px;
+            padding-top: 15px;
+            border-top: 1px solid crimson;
+
+            .left, .right{
+                display: flex;
+                flex-direction: column;
+
+                .thumb img{
+                    width: 100%;
+                    cursor: pointer;
+                    border-radius: 10px;
+
+                }
+
+                .nav{
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    justify-content: center;
+                }
+
+                li{
+                    font-size: 13px;
+                    color: #777;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        h3{
+            font-size: 13.5px;
+            font-weight: 900;
+            text-align: start;
+            color: #5E0404  ;
+            cursor: pointer;
+
+            &:hover{
+                color: crimson;
+            }
+
+        }
+    }
+}

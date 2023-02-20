@@ -1,0 +1,133 @@
+.styleOne .top {
+  position: relative;
+  margin-bottom: 20px;
+  width: 370px;
+  height: 175px;
+  overflow: hidden;
+}
+.styleOne .top img {
+  width: 100%;
+  cursor: pointer;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.styleOne .top .cat {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: crimson;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.styleOne .top .cat:hover {
+  background: linear-gradient(to bottom, #5E0404, #7D0404, crimson, #800000);
+  cursor: pointer;
+}
+.styleOne .top .icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 20px;
+  right: 20px;
+  background-color: crimson;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.styleOne .top .icon:hover {
+  background: linear-gradient(to bottom, #5E0404, #7D0404, crimson, #800000);
+  cursor: pointer;
+}
+.styleOne .top .postInfo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+.styleOne .top .postInfo ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.styleOne .top .postInfo .nav {
+  color: white;
+  font-size: 14px;
+  margin-left: 25px;
+  transition: 0.7s;
+  font-weight: 700;
+}
+.styleOne .top .postInfo .nav:hover {
+  color: crimson;
+  cursor: pointer;
+}
+.styleOne .top .postInfo .nal li {
+  font-weight: 700;
+}
+.styleOne .top .postInfo h3 {
+  padding: 0px 20px 20px 20px;
+  font-size: 16px;
+  color: white;
+  font-weight: 900;
+  width: 350px;
+  transition: 0.7s;
+  cursor: pointer;
+}
+.styleOne .top .postInfo h3:hover {
+  color: crimson;
+}
+.styleOne .bottom .item {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  gap: 15px;
+  padding-top: 15px;
+  border-top: 1px solid crimson;
+}
+.styleOne .bottom .item .left, .styleOne .bottom .item .right {
+  display: flex;
+  flex-direction: column;
+}
+.styleOne .bottom .item .left .thumb img, .styleOne .bottom .item .right .thumb img {
+  width: 100%;
+  cursor: pointer;
+}
+.styleOne .bottom .item .left .nav, .styleOne .bottom .item .right .nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.styleOne .bottom .item .left li, .styleOne .bottom .item .right li {
+  font-size: 13px;
+  color: #777;
+  font-weight: 700;
+}
+.styleOne .bottom h3 {
+  font-size: 13.5px;
+  font-weight: 900;
+  text-align: start;
+  color: #5E0404;
+  cursor: pointer;
+}
+.styleOne .bottom h3:hover {
+  color: crimson;
+}/*# sourceMappingURL=styleOne.css.map */

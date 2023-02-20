@@ -1,0 +1,28 @@
+.headingTitle {
+  border-top: 2px solid crimson;
+}
+.headingTitle .heading {
+  display: flex;
+  align-items: center;
+  padding: 15px 0px;
+  justify-content: space-between;
+}
+.headingTitle .heading .title {
+  font-size: 18px;
+  font-weight: 700;
+  color: crimson;
+  text-transform: uppercase;
+}
+.headingTitle .heading .icon {
+  display: flex;
+  align-items: center;
+  color: #777;
+  gap: 2px;
+  cursor: pointer;
+}
+.headingTitle .heading .icon .left:hover {
+  color: crimson;
+}
+.headingTitle .heading .icon .right:hover {
+  color: crimson;
+}/*# sourceMappingURL=headingTitle.css.map */

@@ -1,10 +1,10 @@
 .navbarTop{
     background: crimson;
-    height: 90px;
+    height: 115px;
     width: 100%;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 15;
 
      .navbarContainer{
         padding: 12.5px 30px;
@@ -81,41 +81,38 @@
                 }
 
 
-                .icons{
-                        display: flex;
-                        color: #ffa9a9;
-                        gap: 15px;
-                        cursor: pointer;
-                    }
-            
-                .menu {
-                    position: absolute;
-                    top: 0;
-                    left: -30%;
-                    width: 30%;
-                    height: 100vh;
-                    background: #fff;
-                    z-index: 10;
-                    transform: translateX(-100%);
-                    transition: transform 0.7s ease-in-out, left 0.7s ease-in-out;
-                }
-                
-                .show-menu {
-                    left: 0;
-                    transform: translateX(0%);
-                    transition: transform 0.7s ease-in-out, left 0.7s ease-in-out;
-                }
-
-                .close-button {
-                    position: absolute;
-                    top: 20px;
-                    right: 20px;
-                    font-size: 1.5rem;
-                    color: #333;
-                    background-color: transparent;
+                .subscribe-button {
+                    background-color: crimson;
+                    color: white;
+                    padding: 7px 20px;
                     border: none;
+                    border-radius: 10px;
+                    font-size: 16px;
+                    font-weight: 500;
                     cursor: pointer;
+                    transition: 0.5s;
+                    box-shadow: 0 0 10px 0px white;
+                
+                
+                    &:hover {
+                        background: linear-gradient(to bottom, #5E0404, #7D0404, crimson, #800000);
+                        box-shadow: 0 0 10px 0px white, 0 0 20px 0px crimson;
+                    }
+                }
+                .logo{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100px;
+                    background-color: crimson;
                 }
 
+                .logo img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                }
+            
+                
      }
 } 

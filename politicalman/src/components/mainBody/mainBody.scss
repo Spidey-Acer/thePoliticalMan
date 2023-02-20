@@ -1,0 +1,13 @@
+.mainBody{
+    padding: 30px 30px;
+
+    .mainBodyWrapper{
+        display: flex;
+        gap: 25px;
+
+        .item{
+            flex: 4;
+            width: 100%;
+        }
+    }
+}

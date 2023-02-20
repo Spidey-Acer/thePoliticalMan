@@ -1,15 +1,40 @@
-import React from 'react'
-import { useState, useEffect } from 'react'
+import React, { useState, useRef, useEffect } from "react";
+import { MdOutlineClose } from "react-icons/md";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa";
+import { WiDayCloudy } from "react-icons/wi";
+import { BiCalendar } from "react-icons/bi";
 import { FaHome } from 'react-icons/fa'
 import "./navbarBottom.scss"
+import SearchForm from "./SearchForm";
 
 
 const NavbarBottom = () => {
-    const [dropdownone, setDropdownone] = useState(false);
+    const [showMenu, setShowMenu] = useState(false);
+    const menuRef = useRef();
 
-    const handleDropdownone = (e) => {
-        setDropdownone(!dropdownone);
+
+    function handleMenuClick() {
+        if (showMenu) {
+            setShowMenu(false);
+        } else {
+            setShowMenu(true);
+        }
     }
+
+    useEffect(() => {
+        function handleClickOutside(event) {
+            if (menuRef.current && !menuRef.current.contains(event.target)) {
+                setShowMenu(false);
+            }
+        }
+
+        document.addEventListener("mousedown", handleClickOutside);
+
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [menuRef]);
 
     const [showNavbarBottom, setShowNavbarBottom] = useState(true);
 
@@ -41,46 +66,42 @@ const NavbarBottom = () => {
         <div className="navbarBottomWrapper">
 
             <div className="left-item">
-                <div className="item" onClick={handleDropdownone}>
-                <span className="glow-icon">
-                    <FaHome style={{ fontSize: "30px" }}/>
-                </span>
+                  <div className="menubar" onClick={handleMenuClick}>
+                      {showMenu ? <MdOutlineClose /> : <GiHamburgerMenu />}
+                      <span>Menu</span>
+                  </div>
 
-                { dropdownone && (
-                    <div className="dropDownMenu1">
-                        <span>
-                            <a>County News</a>
-                        </span>
-                        <span>
-                            <a>National News</a>
-                        </span>
-                        <span>
-                            <a>East-African News</a>
-                        </span>
-                        <span>
-                            <a>Africa News</a>
-                        </span>
-                        <span>
-                            <a>World News</a>
-                        </span>
-                        <span>
-                            <a>Opinions</a>
-                        </span>
-                        <span>
-                            <a>Policy Briefs</a>
-                        </span>
-                    </div> 
-                )}
-            </div>
+                  {showMenu && (
+                      <div
+                          className={`menu ${showMenu ? "show-menu" : ""}`}
+                          ref={menuRef}
+                      >
+
+                          <ul>
+                              <li>County News</li>
+                              <li>National News</li>
+                              <li>East African News</li>
+                              <li>African News</li>
+                              <li>Opinion</li>
+                              <li>Policy Briefs</li>
+                              <li>Politricks</li>
+
+                          </ul>
+
+                          <div className="menu-icons">
+                              <FaFacebook style={{ fontSize: "25px" }} />
+                              <FaTwitter style={{ fontSize: "25px" }} />
+                              <FaYoutube style={{ fontSize: "25px" }} />
+                          </div>
+
+                      </div>
+                  )}
+
+            
 
             </div>
             <div className="right-item">
-                <div className="item">
-                <button className="subscribe-button" onClick={handleSubscribeClick}>
-                    Subscribe
-                </button>
-            </div>
-
+                  <SearchForm />
             </div>
             <div>
                 
